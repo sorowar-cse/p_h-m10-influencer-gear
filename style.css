@@ -7,9 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+nav, .banner, .features-container, .sponsors, .Collections, .footer {
     background-color: #FFF;
-    padding: 50px 120px;
+    padding: 20px 120px;
 }
 
 nav {
@@ -17,6 +17,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    padding: 50px 120px;
 }
 
 nav .nav-title {
@@ -46,11 +47,12 @@ nav .nav-menu i {
     margin-left: 35px;
 }
 
-.banner {
+.banner,
+.features-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
     gap: 50px;
 }
@@ -59,14 +61,16 @@ nav .nav-menu i {
     width: 50%;
 }
 
-.banner .banner-left h1 {
+.banner .banner-left h2,
+.features .features-right h2 {
     color: #3A3A3A;
     font-family: Poppins;
     font-size: 52px;
     font-weight: 700;
 }
 
-.banner .banner-left p {
+.banner .banner-left p,
+.features .features-right p {
     color: #3A3A3A;
     font-family: Poppins;
     font-size: 16px;
@@ -75,7 +79,8 @@ nav .nav-menu i {
     width: 500px;
 }
 
-.banner .banner-left a {
+.banner .banner-left a,
+.features .features-right a {
     color: #FFF;
     font-family: Poppins;
     font-size: 16px;
@@ -88,21 +93,19 @@ nav .nav-menu i {
     background: #E02C6D;
 }
 
-.banner .banner-left a:hover {
+.banner .banner-left a:hover,
+.features .features-right a:hover {
     color: #E02C6D;
     background: #FFF;
     border: 1px solid #E02C6D;
 }
 
-.banner .banner-left i {
+.banner .banner-left i,
+.features .features-right i {
     font-size: 16px;
     margin-left: 15px;
 }
 
-/* .banner .banner-right {
-    width: 35%;
-    margin-left: -150px;
-} */
 
 .banner .banner-right img {
     width: 100%;
@@ -112,11 +115,10 @@ nav .nav-menu i {
 }
 
 .sponsors {
-    margin: 120px 50px 50px 50px;
+    margin: 20px 60px 0px 60px;
 }
 
 .sponsors hr {
-
     fill: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
 }
 
@@ -124,7 +126,11 @@ nav .nav-menu i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 0px 25px 0px;
+    margin: 30px 0px 30px 0px;
+}
+
+.Collections {
+    margin-top: -25px;
 }
 
 .Collections h2 {
@@ -144,8 +150,6 @@ nav .nav-menu i {
 }
 
 .Collections .collections-container .collection-card {
-    /* width: 329px;
-height: 476px; */
     background-color: #FFF;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
@@ -179,14 +183,95 @@ height: 476px; */
 }
 
 .Collections .collections-container .collection-card .text {
-    color:#787885;
-font-family: Inter;
-font-size: 16px;
-font-weight: 700;
+    color: #787885;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
 .Collections .collections-container .collection-card i {
     font-size: 16px;
     color: #FB8200;
+}
+
+.Collections a {
+    color: #E02C6D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 1118px;
+}
+
+.Collections i {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.features .features-container .features-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.features-container .features-right {
+    width: 60%;
+}
+
+.features-container .features-right h2 {
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    background: #0A0826;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer h2 {
+    color: #FFF;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 700;
+}
+
+.footer p {
+    color: var(--text-gray-300, #D9DBE1);
+font-family: Manrope;
+font-size: 14px;
+font-weight: 700;
+margin-top: 0px;
+margin-bottom: 10px;
+}
+
+.footer a {
+    color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 700;
+text-decoration: none;
+}
+
+.footer a:hover {
+    color: #E02C6D;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer .social-icons a {
+    color: #FFF;
+    font-size: 16px;
+    margin: 0px 15px 0px 15px;
+}
+
+.footer .social-icons a:hover {
+    color: #E02C6D;
 }
